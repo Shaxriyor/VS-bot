@@ -39,18 +39,6 @@ logging.basicConfig(
         level=logging.INFO)
 logger = logging.getLogger(__name__)
 #
-
-
-
-
-
-
-
-
-
-
-
-
 # Отправка сообщения на команду /help
 def help(bot, update):
     bot.sendMessage(update.message.chat_id, text=help_text, parse_mode=ParseMode.MARKDOWN)
@@ -230,7 +218,7 @@ def echo(bot, update):
 #
 def main():
     # Create the EventHandler and pass it your bot's token.
-    updater = Updater("199556878:AAGpvdfHBvYl5hwE0ghsmHDEbPZyCw8ybdk")
+    updater = Updater("ТОКЕН")
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
     # on different commands - answer in Telegram
