@@ -9,7 +9,6 @@ from time import sleep
 import logging
 import requests, json
 import urllib.request, urllib.parse,urllib
-import urllib.request
 import re, sys, os, platform
 import random  as  random_number
 #
