@@ -1,0 +1,18 @@
+
+def main():
+    # Создаем класс Updater и указываем текущий токен вашего бота
+    updater = Updater("370676326:AAH81KKE-UwZS6XvBQRxDbQsx45Bkr6NrP0")
+    dp = updater.dispatcher
+    # Задаем стандартные команды /help /start. Они должны быть установлены по умолчанию.
+    dp.addTelegramCommandHandler("start", start)
+    dp.addTelegramCommandHandler("help", help)
+    dp.addTelegramMessageHandler(echo)
+    # Добавляем обработку ошибок. Они будут записываться в функции error
+    dp.addErrorHandler(error)
+    # Запускаем
+    updater.start_polling()
+    updater.idle()
+#
+if __name__ == '__main__':
+    main()
+#
