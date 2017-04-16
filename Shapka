@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+#
+#
+# Импортировать модули телеграма
+from telegram import Updater, Emoji, ParseMode
+import telegram
+from time import sleep
+# 
+import logging
+import requests, json
+import urllib.request, urllib.parse,urllib
+import urllib.request
+import re, sys, os, platform
+import random  as  random_number
+#
+# Переменные и Запросы
+help_text = 'Текст, который будет выводиться при команде /help'
+#
+# Юзер новый заходит в чат
+welcome_text = 'Текст, который будет выводиться, когда юзер заходит в чат'
+#
+# Юзер покидает чат
+goodbuy_text = 'Текст, который будет выводиться, когда юзер выходит из чата'
+#
+# Локальный IP адрес
+MY_IP = '1.2.3.4'
+# Будет такой себе переключатель. Когда True - обрабатывать сообщения
+# Когда False - не принимать сообщения
+WORK = True
+# ID чата админа и его Username
+ADMIN_CHAT = '1234567'
+ADMIN_USERNAME = "@username"
+# Адрес хранения мультимедиа
+IMG_URI = 'https://vsbot.good-developers.com/'
+# 
+# Логирование
+logging.basicConfig(
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        level=logging.INFO)
+logger = logging.getLogger(__name__)
+ 
+#
+#
